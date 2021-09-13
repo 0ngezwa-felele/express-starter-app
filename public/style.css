@@ -5,17 +5,44 @@ body {
 
 .container {
 	margin: auto;
-	background-color: honeydew;
+	background-color: rgb(40, 218, 40);
 	width: 80%;
 	padding: 1em;
 }
 
 
 .counter {
-	background-color: lightgray;
+	background-color: rgb(104, 228, 47);
 	font-size: 2em;
 	width: 3em;
 	text-align: center;
 	padding: 0.5em;
 	margin-bottom: 0.25em;
 }
+
+.cart {
+	background-color: #83d44d;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid rgb(116, 219, 68);
+	border-radius: 3px;
+  }
+  .pizzas{
+	  display: flex;
+	  padding: 2em;
+  }
+  .small{
+	  padding: 3em;
+	  background-color: aqua;
+  }
+
+  .medium{
+	padding: 3em;
+	background-color: aqua;
+}
+
+.large{
+	padding: 3em;
+	background-color: aqua;
+}
+
+  
