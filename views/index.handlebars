@@ -13,22 +13,25 @@
 
                 <div class="Price1">
                     <p><a href="#">Small</a> <span class="price"></span></p>
-                    <strong>{{pizzaSmall}}</strong>
+                    <strong>R{{pizzaSmall}}</strong>
                 </div>
                 <div class="Price2">
                     <p><a href="#">medium</a> <span class="price"></span></p>
 
-                    <strong>{{pizzaMedium}}</strong>
+                    <strong>R{{pizzaMedium}}</strong>
                 </div>
                 <div class="Price3">
                     <p><a href="#">Large</a> <span class="price"></span></p>
 
-                    <strong>{{pizzaLarge}}</strong>
+                    <strong>R{{pizzaLarge}}</strong>
+
+                   
                 </div>
 
                 <hr>
                  <form action="/Total" method="GET" value="">
-                <p>Total cost <span class="price" style="color:black"><b></b></span></p>
+                <p> <strong> Total cost  R{{pizzaTotal}}</strong><span class="price" style="color:black"><b></b></span></p>
+
 
                 <a href="/order">Order</a>
                 </form>

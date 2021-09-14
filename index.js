@@ -34,24 +34,27 @@ app.get('/', function (req, res) {
 	pizzaSmall: smallTotal,
 	pizzaMedium: mediumTotal,
 	pizzaLarge: largeTotal,
-	pizzaTotal: grandTotal,
+	pizzaTotal: Total,
 
 })
 })
 app.post('/small', function (req, res) {
 	smallTotal += 33.99
+	Total+= 33.00
 	res.redirect('/');
 
 })
  
 app.post('/medium', function (req, res) {
 	mediumTotal += 65.00
+	Total+= 65.00
 	res.redirect('/');
 
 })
 
 app.post('/large', function (req, res) {
 	largeTotal += 85.00
+	Total+= 85.00
 	res.redirect('/');
 
 })
