@@ -1,75 +1,103 @@
-
 <div>
 
-    <form action="/count" method="post">
+    {{!-- <form action="/count" method="post" value=""> --}}
         <div class="container">
             <div class="cart">
-                <h4>Pizza <span class="price" style="color:black"><i class="fa fa-pizza-cart"></i>
+                
+                         
+                <h4 class="cartIMG">Pizza <span class="price" style="color:black"><i class="fa fa-pizza-cart"></i>
                         <b>Cart</b></span>
+                        <img src="shopping-cart.png" alt="" width="2%" height="2%">
                 </h4>
-                <p><a href="#">Small</a> <span class="price"></span></p>
-                <p><a href="#">medium</a> <span class="price"></span></p>
-                <p><a href="#">Large</a> <span class="price"></span></p>
+                   
+
+                <div class="Price1">
+                    <p><a href="#">Small</a> <span class="price"></span></p>
+                    <strong>{{pizzaSmall}}</strong>
+                </div>
+                <div class="Price2">
+                    <p><a href="#">medium</a> <span class="price"></span></p>
+
+                    <strong>{{pizzaMedium}}</strong>
+                </div>
+                <div class="Price3">
+                    <p><a href="#">Large</a> <span class="price"></span></p>
+
+                    <strong>{{pizzaLarge}}</strong>
+                </div>
+
                 <hr>
+                 <form action="/Total" method="GET" value="">
                 <p>Total cost <span class="price" style="color:black"><b></b></span></p>
 
                 <a href="/order">Order</a>
+                </form>
             </div>
 
 
             <div class="pizzas">
+                <form action="/small" method="POST">
+                    <div class="pizza small">
+                        <div class="info">
+                            <img src="pizza.png" alt="" width="1000%">
+                            <h2>Small Pizza</h2>
+                            <strong>33.99</strong>
 
-                <div class="pizza small">
-                    <div class="info">
-                        <img src="pizza.png" alt="">
-                        <h2>small Pizza</h2>
-                        <strong>R33.00</strong>
 
-                    </div>
+                        </div>
 
-                    <div class="orderBox">
-                        <button class="btnBuy" style="margin-left: auto">buy</button>
-                    </div>
-
-                </div>
-
-                <div class="pizza medium">
-                    <div class="info">
-                        <img src="pizza.png" alt="">
-                        <h2>Medium Pizza</h2>
-                        <strong>R65.00</strong>
+                        <div class="orderBox">
+                            <button class="btnBuy" value="small" name="small" type="submit" style="margin-left: auto">buy</button>
+                        </div>
 
                     </div>
+                </form>
 
-                    <div class="orderBox">
-                        <button class="btnBuy" style="margin-left: auto">buy</button>
-                    </div>
+                <form action="/medium" method="POST" value="">
+                    <div class="pizza medium">
+                        <div class="info">
+                            <img src="pizza.png" alt="" width="1000%" height="">
+                            <h2>Medium Pizza</h2>
+                            <strong>R65.00</strong>
 
-                </div>
-                <div class="pizza large">
-                    <div class="info">
-                        <img src="pizza.png" alt="">
-                        <h2>Large Pizza</h2>
-                        <strong>85.00</strong>
-                    </div>
-                     <div class="orderBox">
-                        <button class="btnBuy" style="margin-left: auto">buy</button>
-                    </div>
+                        </div>
 
-                </div>
+                        <div class="orderBox">
+                            <button class="btnBuy" style="margin-left: auto">buy</button>
+                        </div>
+
+                    </div>
+                </form>
+
+                <form action="/large" method="POST" value="">
+
+
+                    <div class="pizza large">
+                        <div class="info">
+                            <img src="pizza.png" alt="" width="1000%">
+                            <h2>Large Pizza</h2>
+                            <strong>85.00</strong>
+                        </div>
+                        <div class="orderBox">
+                            <button class="btnBuy" style="margin-left: auto">buy</button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
-    </form>
+        </div>
+    {{!-- </form> --}}
 
 
 </div>
 
 </div>
 
-<div class="input-container">
+{{!-- <div class="input-container">
 
     <i class="fa fa-pizza"></i>
 
     <button type="submit" class="btn">buy</button>
     </form>
 
-</div>
+</div> --}}

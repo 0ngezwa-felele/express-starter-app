@@ -1,12 +1,15 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
+const pizzaAdd = require('./pizza');
 let small 
 let medium 
 let large 
-let grandTotal
+let grandTotal = 0
 let size 
+let price = 0
 
 const app = express();
+const adding = pizzaAdd
 // const PORT =  process.env.PORT || 3017;
 
 // enable the req.body object - to allow us to use HTML forms
@@ -21,34 +24,44 @@ app.use(express.static('public'));
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
+var smallTotal = 0
+var mediumTotal = 0
+var largeTotal = 0
+var Total = 0
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
+	res.render('index',{
+	pizzaSmall: smallTotal,
+	pizzaMedium: mediumTotal,
+	pizzaLarge: largeTotal,
+	pizzaTotal: grandTotal,
 
-	res.render('index', {
-	
-	});
-});
-
+})
+})
 app.post('/small', function (req, res) {
-	if(size == 'small'){
-		small == 33
-	}
-
+	smallTotal += 33.99
 	res.redirect('/');
 
 })
  
 app.post('/medium', function (req, res) {
-
+	mediumTotal += 65.00
 	res.redirect('/');
 
 })
 
 app.post('/large', function (req, res) {
-
+	largeTotal += 85.00
 	res.redirect('/');
 
 })
+
+app.get('/Total', function (req, res) {
+	
+	res.render('/');
+
+})
+
 
 app.post('/count', function (req, res) {
 

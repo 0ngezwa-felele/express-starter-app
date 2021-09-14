@@ -6,18 +6,8 @@ body {
 .container {
 	margin: auto;
 	background-color: rgb(40, 218, 40);
-	width: 80%;
+	width: 70%;
 	padding: 1em;
-}
-
-
-.counter {
-	background-color: rgb(104, 228, 47);
-	font-size: 2em;
-	width: 3em;
-	text-align: center;
-	padding: 0.5em;
-	margin-bottom: 0.25em;
 }
 
 .cart {
@@ -25,24 +15,150 @@ body {
 	padding: 5px 20px 15px 20px;
 	border: 1px solid rgb(116, 219, 68);
 	border-radius: 3px;
+	
+	
+  }
+  .cartIMG{
+	  display: flex;
+	  
+  }
+  .Price1{
+	  display: flex;
+  }
+  .Price1 strong{
+	  display: flex;
+	  padding: 1em;
+  }
+  .Price2{
+	display: flex;
+}
+.Price2 strong{
+	display: flex;
+	padding: 1em;
+}
+.Price3{
+	display: flex;
+
+}
+.Price3 strong{
+	display: flex;
+	padding: 1em;
+}
+.pizzas{
+	display: flex;
+	padding: 1em;
+}
+.info{
+	padding:2em;
+	width: 2%;
+	height: 3%;
+	/* padding: 2em; */
+	
+}
+	
+.small{
+	border: solid black;
+	width: 55%;
+	background-color: chocolate;
+	border-radius: 25px;
+
+}
+.medium{
+	border: solid black;
+	width: 55%;
+	background-color: chocolate;
+	border-radius: 25px;
+}
+.large{
+	border: solid black;
+	width: 55%;
+	background-color: chocolate;
+	border-radius: 25px;
+}
+.orderBox{
+	padding: 1em;
+}
+.orderBox button{
+	padding: 1em;
+	border-radius: 15px;
+}
+@media screen  and (min-width: 425px) and (max-width:720px){
+	.cartIMG{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.Price1{
+		display: flex;
+		flex-direction: column;
+	}
+	.Price1 strong{
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+	}
+	.Price2{
+	  display: flex;
+	  flex-direction: column;
+  }
+  .Price2 strong{
+	  display: flex;
+	  flex-direction: column;
+	  padding: 1em;
+  }
+  .Price3{
+	  display: flex;
+	  flex-direction: column;
+  
+  }
+  .Price3 strong{
+	  display: flex;
+	  flex-direction: column;
+	  padding: 1em;
   }
   .pizzas{
 	  display: flex;
-	  padding: 2em;
+	  flex-direction: column;
+	  padding: 1em;
   }
+  .info{
+	  display: flex;
+	  flex-direction: column;
+	  padding:2em;
+	  width: 2%;
+	  height: 3%;
+	  /* padding: 2em; */
+	  
+  }
+	  
   .small{
-	  padding: 3em;
-	  background-color: aqua;
-  }
-
-  .medium{
-	padding: 3em;
-	background-color: aqua;
-}
-
-.large{
-	padding: 3em;
-	background-color: aqua;
-}
-
+	  border: solid black;
+	  width: 55%;
+	  background-color: chocolate;
+	  border-radius: 25px;
+	  display: flex;
+	  flex-direction: column;
   
+  }
+  .medium{
+	  border: solid black;
+	  width: 55%;
+	  background-color: chocolate;
+	  border-radius: 25px;
+	  display: flex;
+	  flex-direction: column;
+  }
+  .large{
+	  border: solid black;
+	  width: 55%;
+	  background-color: chocolate;
+	  border-radius: 25px;
+  }
+  .orderBox{
+	  padding: 1em;
+  }
+  .orderBox button{
+	  padding: 1em;
+	  border-radius: 15px;
+  }
+}
